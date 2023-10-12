@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/movies_afisha/static/css/main.45ae9716.css",
+    "main.js": "/movies_afisha/static/js/main.1eeec998.js",
+    "static/css/841.ba47e630.chunk.css": "/movies_afisha/static/css/841.ba47e630.chunk.css",
+    "static/js/841.c2122e70.chunk.js": "/movies_afisha/static/js/841.c2122e70.chunk.js",
+    "static/css/907.ba47e630.chunk.css": "/movies_afisha/static/css/907.ba47e630.chunk.css",
+    "static/js/907.4f2d3559.chunk.js": "/movies_afisha/static/js/907.4f2d3559.chunk.js",
+    "static/css/281.ba47e630.chunk.css": "/movies_afisha/static/css/281.ba47e630.chunk.css",
+    "static/js/281.11d6823a.chunk.js": "/movies_afisha/static/js/281.11d6823a.chunk.js",
+    "static/js/761.421b9ec8.chunk.js": "/movies_afisha/static/js/761.421b9ec8.chunk.js",
+    "static/css/670.ba47e630.chunk.css": "/movies_afisha/static/css/670.ba47e630.chunk.css",
+    "static/js/670.39ca19fb.chunk.js": "/movies_afisha/static/js/670.39ca19fb.chunk.js",
+    "static/css/339.ba47e630.chunk.css": "/movies_afisha/static/css/339.ba47e630.chunk.css",
+    "static/js/339.19684d06.chunk.js": "/movies_afisha/static/js/339.19684d06.chunk.js",
+    "static/js/444.5f7c15b5.chunk.js": "/movies_afisha/static/js/444.5f7c15b5.chunk.js",
+    "static/js/782.ad02401b.chunk.js": "/movies_afisha/static/js/782.ad02401b.chunk.js",
+    "index.html": "/movies_afisha/index.html",
+    "main.45ae9716.css.map": "/movies_afisha/static/css/main.45ae9716.css.map",
+    "main.1eeec998.js.map": "/movies_afisha/static/js/main.1eeec998.js.map",
+    "841.ba47e630.chunk.css.map": "/movies_afisha/static/css/841.ba47e630.chunk.css.map",
+    "841.c2122e70.chunk.js.map": "/movies_afisha/static/js/841.c2122e70.chunk.js.map",
+    "907.ba47e630.chunk.css.map": "/movies_afisha/static/css/907.ba47e630.chunk.css.map",
+    "907.4f2d3559.chunk.js.map": "/movies_afisha/static/js/907.4f2d3559.chunk.js.map",
+    "281.ba47e630.chunk.css.map": "/movies_afisha/static/css/281.ba47e630.chunk.css.map",
+    "281.11d6823a.chunk.js.map": "/movies_afisha/static/js/281.11d6823a.chunk.js.map",
+    "761.421b9ec8.chunk.js.map": "/movies_afisha/static/js/761.421b9ec8.chunk.js.map",
+    "670.ba47e630.chunk.css.map": "/movies_afisha/static/css/670.ba47e630.chunk.css.map",
+    "670.39ca19fb.chunk.js.map": "/movies_afisha/static/js/670.39ca19fb.chunk.js.map",
+    "339.ba47e630.chunk.css.map": "/movies_afisha/static/css/339.ba47e630.chunk.css.map",
+    "339.19684d06.chunk.js.map": "/movies_afisha/static/js/339.19684d06.chunk.js.map",
+    "444.5f7c15b5.chunk.js.map": "/movies_afisha/static/js/444.5f7c15b5.chunk.js.map",
+    "782.ad02401b.chunk.js.map": "/movies_afisha/static/js/782.ad02401b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45ae9716.css",
+    "static/js/main.1eeec998.js"
+  ]
+}
