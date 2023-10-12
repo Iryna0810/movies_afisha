@@ -5,19 +5,38 @@ import {devices} from "../constants/constants"
 
 export const List = styled.ul`
 display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 150px;
+  // gap: 150px;
   width: 100%;
   height: 100%;
-  font: normal normal bold 30px comic sans ms;
+  font: normal bold 20px comic sans ms;
   list-style: none;
-	padding: 0;
+  border: 5px;
+	padding: 5px;
   margin: 0;
   @media screen and ${devices.md} {
-    background-color: indigo;
+    font: normal bold 30px comic sans ms;
 }
 `;
+
+export const ListSearchFilms = styled.ul`
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and ${devices.md}{
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 16px;
+  }
+`
+
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
@@ -25,7 +44,6 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-
   &.active {
     color: white;
     background-color: orangered;
@@ -33,11 +51,11 @@ export const Link = styled(NavLink)`
 
   export const LinkPage = styled(NavLink)`
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 5px;
   text-decoration: none;
   color: #fff;
   font-weight: 300;
-  font: normal normal bold 20px comic sans ms;
+  font: normal bold 20px comic sans ms;
   background-color: #3f51b5;
 
   &.active {
@@ -65,6 +83,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
   height: 100px;
   padding-right: 24px;
   padding-left: 24px;
@@ -78,12 +97,12 @@ export const Header = styled.header`
 `
 
 export const Button = styled.button`
-    display: block;
+    display: flex;
     width: auto;
-    height:70px;
+    height: 35px;
     text-align: center;
     vertical-align: middle;
-    padding: 12px 24px;
+    padding: 8px 12px;
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -97,28 +116,38 @@ export const Button = styled.button`
     -moz-box-shadow: #4042ff 0px 0px 40px 0px;
     box-shadow: #4042ff 0px 0px 40px 0px;
     text-shadow: #0b0b3a 1px 1px 1px;
-    font: normal normal bold 20px comic sans ms;
+    font: normal bold 15px comic sans ms;
     color: #ffffff;
     cursor: pointer;
-    text-decoration: none;`;
+    text-decoration: none;
+    @media and screen ${devices.md}{
+      padding: 12px 24px;
+      height: 50px;
+      font: normal bold 20px comic sans ms;
+    }
+    `;
 
 export const StyledInput = styled.input`
 display: inline-block;
   width: 100%;
   font: inherit;
-  font-size: 20px;
+  font-size: 16px;
   outline: none;
   background-color: #d4bfd3;
   color: #50174c;
   border: 1px solid #d4bfd3;
-  height: 50px;
-  width: auto;
-  border-radius: 4px;
-  padding: 0 20px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 10px;
   transition: 300ms;
   cursor: pointer;
   ::placeholder {
     color:#50174c;
+  }
+  @madia and screen ${devices.md}{
+padding: 0 20px;
+height: 50px;
+font-size: 20px;
   }
 `;
 
@@ -138,11 +167,13 @@ export const LiStyled = styled.li`
     `
 
 export const Container = styled.div`
-     display: block;
+     display: flex;
+     flex-direction: column;
      justify-content: center;
      gap: 8px;
      margin: 0 auto;
      padding: 10px;
+     background-color: #EBFAFD;
 `
 
 export const Item = styled.img`
@@ -153,4 +184,14 @@ export const Item = styled.img`
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   height: 260px;
   object-fit: contain;
+`
+
+export const Poster = styled.img`
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @madia and screen ${devices.md}{
+    height: 260px;
+  }
 `
