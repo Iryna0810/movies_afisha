@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import {devices} from "../constants/constants"
+
 
 export const List = styled.ul`
 display: flex;
@@ -12,6 +14,9 @@ display: flex;
   list-style: none;
 	padding: 0;
   margin: 0;
+  @media screen and ${devices.md} {
+    background-color: indigo;
+}
 `;
 
 export const Link = styled(NavLink)`
