@@ -25,10 +25,11 @@ export const ListSearchFilms = styled.ul`
   flex-direction: column;
   margin-top: 0;
   margin-bottom: 10px;
-  padding: 0;
+  padding: 5px;
   list-style: none;
   margin-left: auto;
   margin-right: auto;
+  max-width: calc(100vw - 10px);
   @media screen and ${devices.md}{
   display: grid;
   max-width: calc(100vw - 48px);
@@ -188,10 +189,10 @@ export const Item = styled.img`
 
 export const Poster = styled.img`
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @madia and screen ${devices.md}{
-    height: 260px;
+  height: 260px;
   }
 `
