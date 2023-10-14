@@ -3,8 +3,8 @@ import { Vortex } from 'react-loader-spinner';
 const Loader = () => {
     return (  <Vortex
                     visible={true}
-                    height="280"
-                    width="280"
+                    height="100"
+                    width="100"
                     ariaLabel="vortex-loading"
                     wrapperStyle={{}}
                     wrapperClass="vortex-wrapper"

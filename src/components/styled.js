@@ -7,13 +7,12 @@ export const List = styled.ul`
 display: flex;
   justify-content: space-between;
   align-items: center;
-  // gap: 150px;
   width: 100%;
   height: 100%;
   font: normal bold 20px comic sans ms;
   list-style: none;
-  border: 5px;
-	padding: 5px;
+  // border:  5px;
+	padding: 10px 25px;
   margin: 0;
   @media screen and ${devices.md} {
     font: normal bold 30px comic sans ms;
@@ -37,7 +36,13 @@ export const ListSearchFilms = styled.ul`
   grid-gap: 16px;
   }
 `
-
+export const ContainerFilmDetail = styled.div`
+display:flex;
+flex-direction: column;
+gap: 10px;
+margin: 10px;
+padding: 5px 10px;
+`
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
@@ -58,6 +63,8 @@ export const Link = styled(NavLink)`
   font-weight: 300;
   font: normal bold 20px comic sans ms;
   background-color: #3f51b5;
+  width: auto;
+
 
   &.active {
     color: white;

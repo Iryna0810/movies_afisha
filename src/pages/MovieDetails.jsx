@@ -2,7 +2,7 @@ import { useParams, Outlet, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { Suspense } from "react";
 import Loader from '../components/Loader/Loader'
-import { LinkPage, List } from 'components/styled'
+import { LinkPage, List, Poster, ContainerFilmDetail } from 'components/styled'
 import currentFilmInfo from 'servises/fetch_movie_current';
 import "../styles.css"
 
@@ -41,15 +41,16 @@ const MovieDetails = () => {
             {error && <div>Something went wrong. Try again later</div>}
                 
             <div key={movieId} className="ImageGalleryItem">
-                <div>
+                <ContainerFilmDetail>
+                    <div>
                     <LinkPage to={bankLinkLocationRef.current}>Go Back</LinkPage>
-                    <img
+                    </div>
+                        <Poster
                         src={`${IMG_URL}/${films.backdrop_path}`}
                         alt={films.title} />
                     <h3>{films.title}</h3>
                     <p>{films.overview}</p>
-                </div>
-            </div>
+                
             <List>
                 <li>
                     <LinkPage to="cast" state={movieId}>Cast</LinkPage>
@@ -57,10 +58,14 @@ const MovieDetails = () => {
                 <li>
                     <LinkPage to="reviews" state={movieId}>Reviews</LinkPage>
                 </li>
-            </List>
+                    </List>
+                    </ContainerFilmDetail>
+            </div>
+            <ContainerFilmDetail>
             <Suspense fallback={<div>Loading page...</div>}>
                 <Outlet />
-            </Suspense>
+                </Suspense>
+                </ContainerFilmDetail>
         </div>
     )
 };
